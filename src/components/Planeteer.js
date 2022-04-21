@@ -1,22 +1,24 @@
 import React from "react";
 
-function Planeteer() {
+function Planeteer(props) {
+  const { id, name, fromUSA, born, bio, quote, pictureUrl, twitter } = props;
   return (
     <li className="cards__item">
       <div className="card">
         <img
-          src={"RENDER IMAGE"}
-          alt={"RENDER PERSON NAME"}
+          src={pictureUrl}
+          alt={id}
           className="card__image"
         />
         <div className="card__content">
-          <div className="card__title">{"RENDER NAME"}</div>
-          <p className="card__text">{"CONDITIONALLY RENDER BIO OR QUOTE"}</p>
+          <div className="card__title">{name}</div>
+          <p className="card__text">{quote}, {bio} </p>
           <div className="card__detail">
-            <p>{"RENDER TWITTER HANDLE"}</p>
+            <p>{twitter}</p>
+            <p>{born}</p>
             <p>
               {
-                "CONDITIONALLY RENDER WHETHER THE PERSON IS USA-BASED OR WORKING OVERSEAS"
+               fromUSA? "USA-BASED" : "WORKING OVERSEAS"
               }
             </p>
           </div>

@@ -4,6 +4,7 @@ import Header from "./Header";
 import RandomButton from "./RandomButton";
 import PlaneteersContainer from "./PlaneteersContainer";
 import SearchBar from "./SearchBar";
+import Planeteer from "./Planeteer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <SearchBar />
       <RandomButton />
       <PlaneteersContainer />
+      <Planeteer />
     </div>
   );
 }
