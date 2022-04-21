@@ -83,32 +83,6 @@ Example Response:
 ]
 ```
 
-## Advanced Deliverables
-
-These deliverables are not required to pass the code challenge, but if you have
-the extra time, or even after the code challenge, they are a great way to
-stretch your skills.
-
-> Note: If you are going to attempt these advanced deliverables, please be sure
-> to have a working commit with all the Core Deliverables first!
-
-As a user, I should be able to:
-
-- See the age of the planeteer in the `Planeteer` component (To calculate the
-  age, first figure out how to get the current year in JavaScript and then
-  subtract the planeteer's birth year from it.)
-- Click the `RandomButton` to render a random planeteer to the list of
-  planeteers on the page. Additionally, the new random planeteer should be
-  persisted to the database.
-- Click on a checkbox in the `SearchBar` component that, when checked, sorts the
-  planeteers in the `PlaneteersContainer` from youngest to oldest. When
-  unchecked, the planeteers should be sorted by ID. When viewing a filtered list
-  of planeteers, the sort should only sort the filtered list.
-
-![Planeteers advanced deliverables](demos/planeteers-advanced-deliverables.gif)
-
-### Endpoints for Advanced Deliverables
-
 #### POST `/planeteers`
 
 Required Headers:
